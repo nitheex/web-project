@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"> OnRoad Rescue</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="request.html">Request Help</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="form-container">
+    <h2>Request Emergency Help</h2>
+
+    <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Vehicle Number" required>
+        <input type="text" placeholder="Current Location" required>
+
+        <select required>
+            <option value="">Select Issue</option>
+            <option>Flat Tire</option>
+            <option>Battery Dead</option>
+            <option>Engine Failure</option>
+            <option>Out of Fuel</option>
+        </select>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 OnRoad Rescue</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
